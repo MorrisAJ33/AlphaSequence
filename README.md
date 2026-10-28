@@ -15,9 +15,9 @@ Example:
     
         # StopIteration at seq_max
         
-        c = chars #starts sequence over at max_char finish (e.g. 'ZZZZ' > 'A' happens at 475,255 steps)
+        chars = c #starts sequence over at max_char finish (e.g. 'ZZZZ' > 'A' happens at 475,255 steps)
         
-    print(c) #c @ 25,000 == 'AJYN'
+    print(chars) #c @ 25,000 == 'AJYN'
         
 Generator function does all single characters then repeats for duration of sequence maximum steps for each level set in max_char.
 

@@ -49,6 +49,8 @@ class TestTriples(unittest.TestCase):
     def test_triples_indexes(self):
         self.assertEqual(self.seq[1], 'B', "Should be letter 'B'")
         self.assertEqual(self.seq[53], 'BB', "Should be letter 'BB'")
+        self.assertEqual(self.seq[701], 'ZZ', "Should be letter 'ZZ'")
+        self.assertEqual(self.seq[702], 'AAA', "Should be letter 'AAA'")
         self.assertEqual(self.seq[796], 'ADQ', "Should be letter 'ADQ'")
         self.assertEqual(self.seq[18_278], 'A', "Should be letter 'A'")
         self.assertEqual(self.seq[18_276], 'ZZY', "Should be letter 'ZZY'")
@@ -70,6 +72,8 @@ class TestQuad(unittest.TestCase):
     def test_double_quad(self):
         self.assertEqual(self.seq[1], 'B', "Should be letter 'B'")
         self.assertEqual(self.seq[53], 'BB', "Should be letter 'BB'")
+        self.assertEqual(self.seq[701], 'ZZ', "Should be letter 'ZZ'")
+        self.assertEqual(self.seq[702], 'AAA', "Should be letter 'AAA'")
         self.assertEqual(self.seq[18_276], 'ZZY', "Should be letter 'ZZY'")
         self.assertEqual(self.seq[18_278], 'AAAA', "Should be letter 'AAAA'")
         self.assertEqual(self.seq[475_250], 'ZZZW', "Should be letter 'ZZZW'")
@@ -93,9 +97,13 @@ class TestQuint(unittest.TestCase):
     def test_quints_indexes(self):
         self.assertEqual(self.seq[1], 'B', "Should be letter 'B'")
         self.assertEqual(self.seq[53], 'BB', "Should be letter 'BB'")
+        self.assertEqual(self.seq[701], 'ZZ', "Should be letter 'ZZ'")
+        self.assertEqual(self.seq[702], 'AAA', "Should be letter 'AAA'")
         self.assertEqual(self.seq[18_278], 'AAAA', "Should be letter 'AAAA'")
         self.assertEqual(self.seq[475_250], 'ZZZW', "Should be letter 'ZZZW'")
         self.assertEqual(self.seq[12_356_628], 'ZZZZY', "Should be letter 'ZZZZY'")
+        self.assertEqual(self.seq[12_356_630], 'A', "Should be letter 'A'")
+        self.assertEqual(self.seq[12_356_656], 'AA', "Should be letter 'A'")
         self.assertEqual(self.seq[12_756_630], 'VSRQ', "Should be letter 'VSRQ'")
         self.assertEqual(self.seq[12_999_999], 'AJORZ', "Should be letter 'AJORZ'")
 

@@ -9,7 +9,7 @@ Example:
 
     # sgi sequence_generator_instance
     
-    sgi = AlphaSequencer(max_char=4, seq_max = 25,000)
+    sgi = AlphaSequencer(max_char=4, seq_max=25_000)
     
     for c in sgi.sequence_gen():
     

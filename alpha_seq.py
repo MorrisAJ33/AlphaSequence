@@ -117,6 +117,13 @@ def alphabet_numeral_lookup():
     alphabet[" "] = 0
     return alphabet
 
+def at_value(value, chars):
+    seq = AlphaSequencer(max_chars=chars, seq_max=value)
+    letter = ''
+    for c in seq.sequence_gen():
+        letter = c
+    print(letter)
+
 if __name__ == "__main__":
     start = datetime.now()
     mem_usage = memory_usage(_performance)

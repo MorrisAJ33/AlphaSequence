@@ -1,3 +1,16 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+test_sequences.py: Unit Tests.
+Author: Alex Morris
+Created: 2025-09-29
+Version: 1.0
+Description: Series Testing with Different Character length setups.
+"""
+__author__ = "Alex Morris"
+__copyright__ = "Copyright 2026"
+__license__ = "MIT"
+__maintainer__ = __author__
 from alpha_seq import AlphaSequencer, numeric_alphabet_lookup, alphabet_numeral_lookup
 import unittest
 

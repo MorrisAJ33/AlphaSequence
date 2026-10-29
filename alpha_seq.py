@@ -1,4 +1,17 @@
-from memory_profiler import memory_usage
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+alpha_seq.py: Alphabetical Sequence Combination Series Generator
+Author: Alex Morris
+Created: 2025-09-29
+Version: 1.0
+Description: Series Generators and Primary Import Sequence Object.
+"""
+__author__ = "Alex Morris"
+__copyright__ = "Copyright 2026"
+__license__ = "MIT"
+__maintainer__ = __author__
+#from memory_profiler import memory_usage
 from datetime import datetime
 
 def single_character():
@@ -124,10 +137,10 @@ def at_value(value, chars):
         letter = c
     print(letter)
 
-if __name__ == "__main__":
+"""if __name__ == "__main__":
     start = datetime.now()
     mem_usage = memory_usage(_performance)
     print('Memory usage (in chunks of .1 seconds): %s' % mem_usage)
     print('Maximum memory usage: %s' % max(mem_usage))
 
-    print(f"{datetime.now()-start}")
+    print(f"{datetime.now()-start}")"""
